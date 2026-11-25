@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Bugün, Servis Puantajı</title>
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-sayfa="index">
+<header><div class="ust"><b>Servis Puantajı</b><span>25 Kasım 2026 Çarşamba, 17:12</span><button id="sifirla">Demoyu sıfırla</button></div>
+<nav class="sekmeler" aria-label="Ana gezinme"><a href="index.html" aria-current=page>Bugün</a><a href="puantaj.html">Puantaj</a><a href="canli.html">Canlı harita</a><a href="araclar.html">Araçlar</a><a href="personel.html">Yeni personel</a><a href="hakedis.html">Hakediş</a><a href="hatlar.html">Hatlar</a><a href="firma.html" class=ayri>Fabrika ekranı</a><a href="mobil.html">Şoför telefonu</a></nav></header>
+<main>
+<h1 style="position:absolute;clip-path:inset(50%)">Bugünün çizelgesi</h1><section class="demo" id="demo" aria-label="Canlandırma"><svg viewBox="0 0 330 76" role="img" aria-label="Fabrika alanı ve araç"><path d="M0 58H330" stroke="#46616A" stroke-width="3"/><ellipse cx="92" cy="38" rx="88" ry="36" fill="#FFC900" fill-opacity=".3" stroke="#0F3238" stroke-width="2" stroke-dasharray="6 4"/><path d="M30 44V16l18 10V16l18 10V16l18 10v18z" fill="#0F3238"/><text x="92" y="27" font-size="13" fill="#0F3238">Fabrika alanı</text><g class="arac"><rect x="92" y="38" width="46" height="20" fill="#fff" stroke="#0F3238" stroke-width="2"/><path d="M98 43h9v6h-9zm12 0h9v6h-9zm12 0h9v6h-9z" fill="#0F3238"/><circle cx="102" cy="59" r="5" fill="#0F3238"/><circle cx="128" cy="59" r="5" fill="#0F3238"/></g></svg><div id="demoMetin" aria-live="polite"></div><button class="dg sari" id="demoDg">Aracı alandan çıkar</button></section><div class="sayac" id="sayac"></div><div class="iki"><div class="kay ciz-kay" id="cizelge" tabindex="0" aria-label="Günün çizelgesi"></div><aside class="panel" id="panel" aria-label="Ayrıntı"></aside></div>
+</main>
+<footer>Örnek verilerle hazırlanmış ön tasarım, Webizmo</footer>
+<script src="../assets/veri.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

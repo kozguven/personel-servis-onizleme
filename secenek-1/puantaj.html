@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Puantaj, Servis Puantajı</title>
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-sayfa="puantaj">
+<header><div class="ust"><b>Servis Puantajı</b><span>25 Kasım 2026 Çarşamba, 17:12</span><button id="sifirla">Demoyu sıfırla</button></div>
+<nav class="sekmeler" aria-label="Ana gezinme"><a href="index.html">Bugün</a><a href="puantaj.html" aria-current=page>Puantaj</a><a href="canli.html">Canlı harita</a><a href="araclar.html">Araçlar</a><a href="personel.html">Yeni personel</a><a href="hakedis.html">Hakediş</a><a href="hatlar.html">Hatlar</a><a href="firma.html" class=ayri>Fabrika ekranı</a><a href="mobil.html">Şoför telefonu</a></nav></header>
+<main>
+<div class="baslik"><div><h1>Puantaj</h1><p><span id="ozet"></span></p></div><div role="tablist" style="display:flex"><button class="dg" role="tab" data-g="gun">Bugün</button><button class="dg" role="tab" data-g="ay">Kasım aylık</button></div></div><div class="suz" id="suz"></div><div class="iki" id="ayrinti"><div class="kay uzun" id="liste" tabindex="0" aria-label="Puantaj tablosu"></div><aside class="panel" id="panel" aria-label="Ayrıntı"></aside></div>
+</main>
+<footer>Örnek verilerle hazırlanmış ön tasarım, Webizmo</footer>
+<script src="../assets/veri.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

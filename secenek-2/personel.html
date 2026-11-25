@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Yeni personel, Servis Masası</title>
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-sayfa="personel">
+<a class="atla" href="#ana">İçeriğe geç</a>
+<main id="ana" class="masa duz"><div class="haritaKap"><div id="harita" class="harita" aria-label="Personel adresi ve önerilen hatlar"></div></div>
+<div class="panel"><h1>Yeni personel</h1><form id="form" class="form"><label>Ad soyad<input id="ad" autocomplete="off" required></label><label>Fabrika<select id="fabrika"></select></label><label>Adres<select id="adres"></select></label><p class="kucuk" style="margin:0">Demoda örnek adreslerden seçilir, serbest adres araması yoktur.</p><h2>En yakın, boş yeri olan araçlar</h2><div id="oneriler"></div></form><div id="sonuc" hidden></div><div id="atamalar" style="margin-top:18px"></div><footer class="son"></footer></div></main>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="../assets/veri.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

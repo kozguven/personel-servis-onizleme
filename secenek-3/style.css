@@ -1,0 +1,165 @@
+:root{--bordo:#6b1830;--bordo2:#521024;--gok:#e4f1f9;--gok2:#c3dff0;--deniz:#1f5f86;--yosun:#4b6428;--yosunz:#e9f0dc;--metin:#2b1a20;--soluk:#66545a;--cizgi:#d9d2d5;--amber:#845200}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:90px}
+body{margin:0;background:#fff;color:var(--metin);font:400 17.5px/1.5 "Hanken Grotesk",system-ui,sans-serif}
+h1,h2,h3,p{margin:0}
+h1{font-size:34px;line-height:1.2;font-weight:700;letter-spacing:-.015em;margin-bottom:22px;text-wrap:balance}
+h2{font-size:24px;line-height:1.3;font-weight:700}
+h3{font-size:19px;line-height:1.35;font-weight:700}
+small,.kck{font-size:15.5px;color:var(--soluk)}
+a{color:var(--bordo)}
+button,input,select{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--deniz);outline-offset:2px}
+#ana:focus{outline:0}
+.atla{position:absolute;left:-999px}.atla:focus{left:12px;top:12px;background:#fff;padding:12px;z-index:99}
+main{max-width:1240px;margin:0 auto;padding:34px 28px 56px}
+footer{max-width:1240px;margin:0 auto;padding:18px 28px 96px;font-size:15px;color:var(--soluk)}
+/* gezinme */
+#ust{border-bottom:1px solid var(--cizgi);background:#fff;position:sticky;top:0;z-index:1200}
+.ub{max-width:1240px;margin:0 auto;padding:10px 28px;display:flex;align-items:center;gap:4px;min-height:68px}
+.ub b{font-size:19px;margin-right:auto}
+.ub b a{color:var(--bordo);text-decoration:none;display:inline-flex;align-items:center;min-height:44px}
+.ub nav{display:flex;gap:2px}
+.ub nav a{padding:10px 13px;min-height:46px;text-decoration:none;color:var(--metin);border-radius:10px;font-weight:500}
+.ub nav a:hover{background:var(--gok)}
+.ub nav a[aria-current]{background:var(--gok);font-weight:700;color:var(--bordo)}
+.dg{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:10px 22px;border-radius:12px;border:2px solid var(--bordo);background:var(--bordo);color:#fff;font-weight:600;text-decoration:none;cursor:pointer;text-align:center}
+.dg:hover{background:var(--bordo2)}
+.dg:disabled{opacity:.6;cursor:default}
+.dg.s{background:#fff;color:var(--bordo)}.dg.s:hover{background:var(--gok)}
+.dg.y{background:var(--yosun);border-color:var(--yosun)}
+.dg.k{min-height:46px;padding:7px 16px}
+.lk{background:none;border:0;color:var(--bordo);font-weight:600;text-decoration:underline;text-underline-offset:3px;min-height:46px;padding:8px 4px;cursor:pointer}
+.alt{display:none}
+#ekr{position:fixed;right:18px;bottom:18px;z-index:1300;border:1px solid var(--bordo);background:#fff;color:var(--bordo);border-radius:22px;min-height:44px;padding:6px 18px;font-size:15.5px;font-weight:600;cursor:pointer}
+#panel{position:fixed;right:18px;bottom:72px;z-index:1400;background:#fff;border:2px solid var(--bordo);border-radius:14px;padding:10px;width:290px;max-height:78vh;overflow:auto}
+#panel a,#panel button{display:flex;align-items:center;width:100%;min-height:46px;padding:8px 12px;text-decoration:none;color:var(--metin);border:0;background:none;border-radius:8px;text-align:left;cursor:pointer}
+#panel a:hover,#panel button:hover,#panel [aria-current]{background:var(--gok)}
+#panel button{color:var(--bordo);font-weight:600}
+#tost{position:fixed;left:28px;bottom:24px;z-index:1500;background:var(--metin);color:#fff;border-radius:12px;padding:15px 22px;max-width:min(560px,calc(100vw - 32px));width:max-content;visibility:hidden}
+#tost.ac{visibility:visible}
+/* bugün */
+.durum{background:var(--gok);border-radius:20px;padding:34px 38px;margin-bottom:38px}
+.durum h1{font-size:44px;margin-bottom:10px}
+.durum p{font-size:19px;max-width:70ch}
+.iki{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:52px;align-items:start}
+.grup{margin-bottom:34px}
+.grup h3{margin:0 0 4px}
+.is{border-bottom:1px solid var(--cizgi);padding:13px 0}
+.is .sat{display:flex;gap:16px;align-items:center}
+.is .sat>div{flex:1;min-width:0}
+.is .sat p:first-child{font-weight:600}
+.ic{background:var(--gok);border-radius:14px;padding:20px;margin-top:13px}
+.ic .ds{margin-top:16px;display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center}
+label.al{display:block;font-weight:600;margin:12px 0}
+label.al:first-child{margin-top:0}
+label.al input,label.al select{font-weight:400;margin-top:5px}
+input[type=text],input[type=search],input[type=date],input[type=time],select{display:block;width:100%;min-height:52px;border:1.5px solid #8d7a81;border-radius:11px;background:#fff;padding:9px 14px}
+input[type=search].buyuk{min-height:64px;font-size:21px;border-width:2px;border-color:var(--bordo);border-radius:15px;padding:12px 20px}
+.bos{background:var(--yosunz);color:#2f4016;border-radius:16px;padding:28px 30px}
+.vrd{width:100%;border-collapse:collapse}
+.vrd td,.vrd th{padding:10px 8px 10px 0;border-bottom:1px solid var(--cizgi);text-align:left}
+.vrd td:last-child,.vrd th:last-child{text-align:right;padding-right:0}
+.yan h2{margin-bottom:10px}
+.yan section{margin-bottom:38px}
+/* durak çizgisi */
+.rail{position:relative;display:flex;padding:34px 0 0;margin:10px 0 4px}
+.rail:before{content:"";position:absolute;left:calc(50%/var(--n));right:calc(50%/var(--n));top:46px;height:6px;background:var(--gok2)}
+.rail .dl{position:absolute;left:calc(50%/var(--n));top:46px;height:6px;background:var(--yosun);width:calc((100% - 100%/var(--n))*var(--p));transition:width 1.6s linear}
+.nk{flex:1;min-width:0;position:relative;text-align:center;font-size:15.5px;line-height:1.25}
+.nk i{display:block;width:30px;height:30px;border-radius:50%;margin:0 auto 7px;background:#fff;border:5px solid #8fa9b8;position:relative;font:700 15px/19px "Hanken Grotesk",sans-serif;color:#fff}
+.nk.islendi i{background:var(--yosun);border-color:var(--yosun)}
+.nk.gec i{background:#fff;border-color:var(--yosun);color:var(--amber)}
+.nk.gec i:after{content:"";position:absolute;inset:4px;border-radius:50%;background:var(--amber)}
+.nk.gelmedi i{background:var(--bordo);border-color:var(--bordo)}
+.nk.gelmedi i:after{content:"×";position:absolute;inset:0;font-size:22px}
+.nk.bekliyor i{border-color:var(--deniz);border-style:dashed;border-width:4px}
+.nk b{display:block;font-size:17px}
+.arac{position:absolute;top:2px;width:44px;height:26px;margin-left:-22px;color:var(--bordo);left:var(--x);transition:left 1.6s linear;z-index:2}
+.arac svg{width:44px;height:26px;display:block}
+.rail.min{padding:0;margin:8px 0 2px;max-width:calc(var(--n)*64px)}
+.rail.min:before,.rail.min .dl{top:9px;height:4px}
+.rail.min .nk i{width:21px;height:21px;border-width:4px;margin-bottom:2px}
+.rail.min .nk.gelmedi i:after{font-size:17px;line-height:13px}.rail.min .nk.gec i:after{inset:2px}
+.rail.min .nk{font-size:15px;color:var(--soluk)}
+.h1k{border:2px solid var(--gok2);border-radius:18px;padding:22px}
+.tut{display:grid;grid-template-columns:1fr auto;gap:5px 14px;margin:16px 0}
+.tut dt{color:var(--soluk)}.tut dd{margin:0;text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+.lej{display:flex;flex-wrap:wrap;gap:5px 20px;margin:12px 0 18px;font-size:15.5px;color:var(--soluk)}
+.lej .nk{display:flex;align-items:center;gap:7px;flex:none}.lej .nk i{width:17px;height:17px;border-width:4px;margin:0}
+.lej .nk.gelmedi i:after{font-size:14px;line-height:9px;text-align:center}.lej .nk.gec i:after{inset:1px}
+/* süzgeç, ana/ayrıntı */
+.sz{display:flex;gap:14px;flex-wrap:wrap;margin:16px 0}
+.sz>label{flex:1 1 200px;margin:0;font-weight:600}
+.sk{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px}
+.sk button{min-height:48px;padding:8px 18px;border:1.5px solid #8d7a81;background:#fff;border-radius:11px;font-weight:500;cursor:pointer}
+.sk button[aria-pressed=true]{background:var(--bordo);border-color:var(--bordo);color:#fff;font-weight:600}
+.md{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:44px;align-items:start}
+.md .dt{position:sticky;top:94px;max-height:calc(100vh - 116px);overflow:auto;border:2px solid var(--gok2);border-radius:18px;padding:24px}
+.ogr{display:block;width:100%;text-align:left;background:#fff;border:0;border-bottom:1px solid var(--cizgi);padding:14px 12px;cursor:pointer;min-height:60px}
+.ogr:hover,.ogr[aria-expanded=true]{background:var(--gok)}
+.ogr .u{display:flex;justify-content:space-between;gap:14px}
+.ogr .u span:last-child{text-align:right;min-width:0}
+.rz{font-weight:600}.rz.gec,.rz.yaklasiyor{color:var(--amber)}.rz.gelmedi,.rz.gecti{color:#a01432}.rz.islendi,.rz.gecerli{color:var(--yosun)}.rz.bekliyor{color:var(--deniz)}.rz.planli{color:var(--soluk)}
+.dol{height:10px;border-radius:5px;background:var(--gok2);margin:8px 0 3px;max-width:330px;overflow:hidden}.dol i{display:block;height:100%;background:var(--deniz)}
+.stl{list-style:none;margin:14px 0;padding:0}.stl>li{padding:11px 0;border-bottom:1px solid var(--cizgi)}
+.stl .u{display:flex;gap:12px;justify-content:space-between;align-items:center}
+.kod{font-size:29px;font-weight:700;letter-spacing:.02em}
+.tabk{overflow-x:auto;border:1px solid var(--cizgi);border-radius:12px}
+.tabk table{border-collapse:collapse;font-size:15.5px;min-width:100%}
+.tabk th,.tabk td{padding:9px 8px;border-bottom:1px solid #e8e2e4;text-align:center;font-variant-numeric:tabular-nums}
+.tabk th:first-child,.tabk td:first-child{text-align:left;position:sticky;left:0;background:#fff;min-width:165px}
+.tabk .ek{background:#f8e0e5;color:#86102a;font-weight:700}.tabk .pz{background:#f5f2f3;color:var(--soluk)}
+.harita{height:640px;border-radius:18px;background:var(--gok);z-index:0}
+.hgrid{display:grid;grid-template-columns:minmax(0,1.9fr) minmax(0,1fr);gap:34px}
+.hm{width:34px;height:34px;border-radius:50%;border:3px solid #fff;color:#fff;font:700 13px/28px "Hanken Grotesk",sans-serif;text-align:center;background:#68777f}
+.hm.bekliyor{background:var(--deniz)}.hm.islendi{background:var(--yosun)}.hm.secili{background:var(--bordo);outline:4px solid var(--bordo)}
+/* sihirbaz */
+.adim{display:flex;gap:8px 30px;flex-wrap:wrap;list-style:none;margin:0 0 26px;padding:0;color:var(--soluk)}
+.adim [aria-current]{color:var(--bordo);font-weight:700}.adim .ok{color:var(--yosun);font-weight:600}
+.sih{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:52px;align-items:start}
+.sec{display:block;width:100%;text-align:left;border:2px solid #b8a9af;background:#fff;border-radius:13px;padding:16px 19px;min-height:60px;margin-bottom:11px;cursor:pointer}
+.sec:hover,.sec[aria-pressed=true]{border-color:var(--bordo);background:var(--gok)}
+.oz{background:var(--gok);border-radius:18px;padding:24px}
+.msj{white-space:pre-line;border-radius:14px;padding:18px 20px;background:var(--yosunz);margin:10px 0 14px}
+.msj.b{background:var(--gok)}
+.hata{color:#a01432;font-weight:600;margin-top:6px}
+.topl{display:grid;grid-template-columns:repeat(3,auto);justify-content:space-between;gap:20px;background:var(--gok);border-radius:18px;padding:24px 30px;margin:0 0 26px}
+.topl b{display:block;font-size:29px;line-height:1.25;font-variant-numeric:tabular-nums}
+/* telefonlar */
+.tels{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:38px 26px}
+.tel{break-inside:avoid;margin:0;min-width:0}
+.tel .cr{border:9px solid #37272d;border-radius:32px;height:530px;padding:14px 16px;overflow:hidden;background:#fff;font-size:16px;line-height:1.4;display:flex;flex-direction:column;gap:12px}
+.tel .db{display:flex;justify-content:space-between;font-size:13px;color:var(--soluk)}
+.tel figcaption{padding:12px 4px 0;font-size:16px}
+.tel h3{font-size:20px}
+.tel .dg{padding:9px 10px}
+.tel .kt{border-radius:13px;padding:14px;background:var(--gok)}
+.tel .kt.y{background:var(--yosunz)}.tel .kt.u{background:#f9e7d2}
+.tel .ss{display:flex;justify-content:space-between;gap:8px;padding:9px 0;border-bottom:1px solid var(--cizgi)}
+.tel .it{margin-top:auto;font-size:15px}
+.tel svg.mp{width:100%;height:150px;background:var(--gok);border-radius:12px;display:block}
+@media(max-width:1180px){.ub nav a{padding:10px 8px}.ub .dg{padding:8px 14px}.tels{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:960px){
+.ub nav,.ub>.dg{display:none}.firmaub nav{display:flex}.ub{min-height:56px;padding:4px 16px}
+main{padding:18px 16px 30px}footer{padding:16px 16px 150px}
+h1{font-size:28px;margin-bottom:16px}.durum{padding:22px 20px;border-radius:16px;margin-bottom:26px}.durum h1{font-size:30px}.durum p{font-size:17.5px}
+.iki,.md,.hgrid,.sih{grid-template-columns:minmax(0,1fr);gap:26px}
+.md>.dt{display:none}.ogr+.dtm{background:#fff;border:2px solid var(--gok2);border-top:0;padding:18px 14px;border-radius:0 0 14px 14px;margin-bottom:12px}
+.harita{height:430px}.tels{grid-template-columns:repeat(2,minmax(0,1fr))}
+.alt{display:grid;grid-template-columns:1fr 1fr 1.35fr 1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:1250;background:#fff;border-top:1px solid var(--cizgi);padding:7px 5px calc(7px + env(safe-area-inset-bottom))}
+.alt a,.alt button{display:flex;align-items:center;justify-content:center;text-align:center;min-height:52px;text-decoration:none;color:var(--metin);font-size:15px;line-height:1.15;border:0;background:none;border-radius:11px;font-weight:500;padding:2px;cursor:pointer}
+.alt [aria-current]{background:var(--gok);color:var(--bordo);font-weight:700}
+.alt .or{background:var(--bordo);color:#fff;font-weight:600;margin:0 3px}
+#ekr{bottom:calc(78px + env(safe-area-inset-bottom));right:12px}#panel{bottom:84px;right:12px}body.f #ekr{bottom:14px}body.f #panel{bottom:66px}
+#tost{bottom:84px;left:16px}body:not(.f) #ekr{display:none}.ogr .u b:first-child,.u .dg{white-space:nowrap}
+}
+@media(max-width:600px){
+.is .sat{gap:10px}.dg.k{padding:7px 12px}.topl{grid-template-columns:1fr;gap:12px;padding:20px}.tels{grid-template-columns:1fr;max-width:330px;margin:0 auto}
+.nk{font-size:15px}.nk b{font-size:16px}.h1k{padding:16px 12px}.ic{padding:16px 13px}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+@media print{@page{size:A4 landscape;margin:8mm}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}#ust,.alt,#ekr,#panel,#tost,footer,.atla,.yok{display:none!important}main{padding:0;max-width:none}h1{font-size:20px;margin:0 0 5mm}
+.tels{display:grid;grid-template-columns:repeat(4,1fr);gap:4mm;max-width:none}.tel .cr{height:142mm;border-width:6px;border-radius:24px;font-size:13px;padding:10px;gap:8px}.tel h3{font-size:16px}.tel{break-inside:avoid}.tel:nth-child(4){break-after:page}.tel figcaption{font-size:12.5px}.tel .dg{min-height:36px}.tel input{min-height:36px!important}}
+@media(max-width:400px){.alt a,.alt button{font-size:14.5px}}
+.tel .rail.min{max-width:none}.tel .rail.min .nk{font-size:13px}

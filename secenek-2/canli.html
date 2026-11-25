@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Canlı takip, Servis Masası</title>
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-sayfa="canli">
+<a class="atla" href="#ana">İçeriğe geç</a>
+<main id="ana" class="masa duz"><div class="haritaKap"><div id="harita" class="harita" aria-label="Seçili aracın güzergâhı"></div><div class="lejant"><span><i class="nokta yolda"></i>Yolda</span><span><i class="nokta alanda"></i>Alanda</span><span><i class="nokta"></i>Seferde değil</span><span><i class="nokta sorun"></i>Bugün gelmeyen teki var</span><span>Levhadaki sayı: alandaki araç</span><span>Konumlar örnektir</span></div></div>
+<div class="panel"><div class="ust" style="margin-bottom:10px"><h1>Canlı takip</h1><button type="button" class="dugme ikinci" id="degis">Araç değiştir</button></div><div id="odak"></div><p class="kucuk">Araç konumu ve güzergâh çizgisi örnektir; çizgi durakları düz birleştirir.</p>
+<section id="hatSec"><h2>Bütün araçlar</h2><label style="margin:8px 0">Hat, plaka ya da şoför ara<input id="ara" type="search"></label><div id="hatListe"></div></section><footer class="son"></footer></div></main>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="../assets/veri.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

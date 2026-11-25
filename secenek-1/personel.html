@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Yeni personel, Servis Puantajı</title>
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-sayfa="personel">
+<header><div class="ust"><b>Servis Puantajı</b><span>25 Kasım 2026 Çarşamba, 17:12</span><button id="sifirla">Demoyu sıfırla</button></div>
+<nav class="sekmeler" aria-label="Ana gezinme"><a href="index.html">Bugün</a><a href="puantaj.html">Puantaj</a><a href="canli.html">Canlı harita</a><a href="araclar.html">Araçlar</a><a href="personel.html" aria-current=page>Yeni personel</a><a href="hakedis.html">Hakediş</a><a href="hatlar.html">Hatlar</a><a href="firma.html" class=ayri>Fabrika ekranı</a><a href="mobil.html">Şoför telefonu</a></nav></header>
+<main>
+<div class="baslik"><div><h1>Yeni personel</h1><p>Adres girilir, en yakın geçen ve boş yeri olan araçlar sıralanır.</p></div></div><div class="per"><form class="form" id="pf" novalidate><label class="alan">Ad soyad<input name="ad" autocomplete="off"></label><p class="hata" role="alert" hidden>Personelin adını yazın.</p><label class="alan">Fabrika<select name="firma"></select></label><label class="alan">Adres<select name="adres"></select></label><p class="not">Demoda örnek adreslerden seçilir. Serbest adres arama bu demoda yok.</p><button class="dg ana">Uygun araçları bul</button></form><div><div id="sonuc" aria-live="polite"><h2>Uygun araçlar burada sıralanır</h2><p>Adı yazıp fabrika ve adresi seçin.</p></div><div id="atl" style="margin-top:28px"></div></div></div>
+</main>
+<footer>Örnek verilerle hazırlanmış ön tasarım, Webizmo</footer>
+<script src="../assets/veri.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

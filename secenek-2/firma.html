@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Fabrika ekranı, Servis Masası</title>
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-sayfa="firma" class="firma">
+<a class="atla" href="#ana">İçeriğe geç</a>
+<header class="firmaUst"><div><b>Servis takibi</b><br><span id="kim"></span></div><nav class="sekme" aria-label="Fabrika gezinmesi"><a href="#bugun">Bugün</a><a href="#aylik">Kasım</a></nav></header><main id="ana" class="sayfa"><div class="firmaHarita"><div id="harita" class="harita" aria-label="Fabrikanızın servis araçları"></div></div><div class="ust"><h1 id="baslik"></h1><span class="kucuk">Araç konumları örnektir</span></div><p id="aciklama"></p><div id="icerik" class="tabloKap"></div><footer class="son"></footer></main>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="../assets/veri.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

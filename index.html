@@ -1,0 +1,41 @@
+<!DOCTYPE html><html lang="tr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow"><title>Personel taşımacılığı, üç konsept demo</title><link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;800&display=swap" rel="stylesheet"><style>
+:root{--ink:#1C2024;--muted:#5D6570;--line:#E3E6EA;--bg:#FFFFFF;--soft:#F4F6F7;--accent:#E2562A;--accent-d:#B9421C}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Public Sans",system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:17px}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:16px;padding-bottom:16px;font-size:14px;color:var(--muted)}
+header b{color:var(--ink)}
+.intro{padding:48px 0 28px}
+h1{font-size:clamp(30px,5vw,46px);line-height:1.12;font-weight:800;letter-spacing:-.01em;max-width:18ch}
+.intro p{margin-top:16px;max-width:62ch;color:var(--muted);font-size:18px}
+.opts{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;padding:18px 0 40px}
+.opt{border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;background:#fff}
+.opt .shot{display:block;aspect-ratio:4/3;overflow:hidden;background:var(--soft);border-bottom:1px solid var(--line)}
+.opt .shot img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.opt .body{padding:18px 18px 20px;display:flex;flex-direction:column;gap:10px;flex:1}
+.opt h2{font-size:22px;line-height:1.2}
+.opt h2 small{display:block;font-size:14px;font-weight:600;color:var(--muted);margin-bottom:2px}
+.opt p{color:var(--muted);font-size:15.5px}
+.sw{display:flex;gap:6px;margin-top:2px}
+.sw i{width:26px;height:26px;border-radius:50%;border:1px solid rgba(0,0,0,.1);display:block}
+.btn{display:flex;justify-content:center;align-items:center;min-height:48px;border-radius:10px;background:var(--ink);color:#fff;text-decoration:none;font-weight:700;margin-top:auto}
+.btn:hover{background:#000}
+.screens{font-size:14px;display:flex;flex-wrap:wrap;gap:6px}
+.screens a{padding:6px 10px;border:1px solid var(--line);border-radius:20px;text-decoration:none;color:var(--muted)}
+.screens a:hover{border-color:var(--ink);color:var(--ink)}
+section.block{padding:36px 0;border-top:1px solid var(--line)}
+section.block h2{font-size:26px;margin-bottom:14px}
+ol.steps{padding-left:22px;display:grid;gap:10px;max-width:70ch}
+ol.steps li::marker{font-weight:800;color:var(--accent-d)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.note{background:var(--soft);border-radius:12px;padding:18px 20px;color:var(--ink);font-size:16px}
+.note ul{padding-left:20px;display:grid;gap:6px;margin-top:8px;color:var(--muted)}
+.pdf{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 18px;border-radius:10px;border:2px solid var(--ink);text-decoration:none;font-weight:700;margin-top:6px}
+footer{border-top:1px solid var(--line);padding:22px 0 40px;color:var(--muted);font-size:14px}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media (max-width:900px){.opts{grid-template-columns:1fr}.opt .shot{aspect-ratio:4/3}.two{grid-template-columns:1fr}}
+</style><style>.screens a{min-height:44px;display:flex;align-items:center}</style></head><body>
+<header><div class="wrap"><span><b>Ön tasarım</b>, personel taşımacılığı</span><span>Webizmo</span></div></header><main class="wrap"><div class="intro"><h1>Sisteminiz için üç farklı konsept</h1><p>Ömer Bey, üç seçenek de istediğiniz işleri yapar; fark, ekranı açtığınızda önce ne gördüğünüzdür. Hepsi telefondan ve bilgisayardan tıklanabilir.</p></div><div class="opts"><article class="opt"><a class="shot" href="secenek-1/index.html"><img src="thumbs/secenek-1.jpg" alt="Seçenek 1 açılış ekranı"></a><div class="body"><h2><small>Seçenek 1</small>Çizelge</h2><p>Excel düzenine en yakın seçenek. Günün bütün tekleri tek tabloda; araç alana girince ilgili hücre kendiliğinden dolar.</p><p><b>Size uyar:</b> Excel alışkanlığını sürdürmek ve bütün hatları bir arada görmek isterseniz.</p><div class="screens"><a href="secenek-1/puantaj.html">Puantaj</a><a href="secenek-1/hakedis.html">Hakediş</a><a href="secenek-1/araclar.html">Araçlar</a><a href="secenek-1/mobil.html">Şoför</a></div><a class="btn" href="secenek-1/index.html">Seçenek 1'i aç</a></div></article><article class="opt"><a class="shot" href="secenek-2/index.html"><img src="thumbs/secenek-2.jpg" alt="Seçenek 2 açılış ekranı"></a><div class="body"><h2><small>Seçenek 2</small>Harita</h2><p>Fabrikalar ve araçlar haritada, hatlar yanda. Aracın fabrika alanına giriş ve çıkışını harita üzerinde izlersiniz.</p><p><b>Size uyar:</b> Günü araç takibi üzerinden yönetiyorsanız.</p><div class="screens"><a href="secenek-2/canli.html">Canlı takip</a><a href="secenek-2/personel.html">Yeni personel</a><a href="secenek-2/hatlar.html">Hatlar</a><a href="secenek-2/mobil.html">Şoför</a></div><a class="btn" href="secenek-2/index.html">Seçenek 2'yi aç</a></div></article><article class="opt"><a class="shot" href="secenek-3/index.html"><img src="thumbs/secenek-3.jpg" alt="Seçenek 3 açılış ekranı"></a><div class="body"><h2><small>Seçenek 3</small>Sade</h2><p>Açılışta yalnız bugün ilgilenmeniz gereken işler çıkar; her işi olduğu yerde bitirirsiniz. Telefonda kullanımı en kolay seçenek.</p><p><b>Size uyar:</b> En basit ekranı isterseniz ya da işi çoğunlukla telefondan yürütüyorsanız.</p><div class="screens"><a href="secenek-3/personel.html">Yeni personel</a><a href="secenek-3/araclar.html">Araçlar</a><a href="secenek-3/hakedis.html">Hakediş</a><a href="secenek-3/mobil.html">Şoför</a></div><a class="btn" href="secenek-3/index.html">Seçenek 3'ü aç</a></div></article></div><section class="block"><h2>Denemeniz için</h2><div class="two"><ol class="steps"><li><b>Otomatik puantaj:</b> Beykoz Sancaktepe hattında 17:05 çıkışını demo düğmesiyle canlandırın. Tek kendiliğinden işlenir, ikinci basışta sayılmaz.</li><li><b>Yeni personel:</b> bir adres seçin, en yakın ve boş yeri olan araçlar sıralansın.</li><li><b>Hakediş:</b> fabrika ve taşeron hesabını karşılaştırın.</li><li><b>Fabrika yetkilisi:</b> yetkilinin ekranında fiyat ve taşeron görünmediğine bakın.</li><li><b>Şoför:</b> telefon uygulamasının ekranlarını inceleyin.</li></ol><div class="note"><b>Seçiminizi nasıl iletebilirsiniz?</b><ul><li>WhatsApp'tan "Seçenek 2" yazmanız yeterli.</li><li>Karma da olur: "1'in puantajı, 2'nin haritası".</li><li>Değişmesini istediğiniz yeri ekran adıyla yazabilirsiniz.</li></ul></div></div></section>
+<section class="block"><div class="note"><b>Bilmeniz gerekenler</b><ul><li>Bu bir ön tasarımdır. Firma, plaka, kişi ve tutarlar örnektir; Beykoz Sancaktepe hattı sizin yazdığınız örnekten kuruldu.</li><li>Gerçek konum, bildirim ve WhatsApp gönderimi bu demoda çalışmaz; akış canlandırılır.</li><li>Yaptığınız değişiklikler yalnız kendi tarayıcı sekmenizde kalır. Adres geçicidir.</li></ul></div></section></main><footer><div class="wrap">Webizmo, webizmo.tr</div></footer></body></html>
